@@ -133,6 +133,8 @@ class BaseViewController: UIViewController {
             vcToB.labelValue = "From A ::: \(segueStyleStr)"
             vcFromA.isManualSegue = false
             
+            vcToB.modalPresentationStyle = .fullScreen
+            
         case SegueID.manualToC:
             
             guard let vcToC = segue.destination as? ViewControllerC else { return }
